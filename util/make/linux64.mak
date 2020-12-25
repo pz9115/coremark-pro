@@ -4,7 +4,7 @@ PLATFORM=linux64
 SHELL=/bin/bash
 
 ifndef TOOLCHAIN
-TOOLCHAIN=gcc64
+TOOLCHAIN=gcc
 endif
 
 # Flag: LOAD
@@ -15,7 +15,7 @@ LOAD =
 #	Use this flag to define a command needed to run the image
 #
 #	Example: if you need to run the image with a simulator, set this flag to point to the simulator executable
-RUN			=
+RUN			= qemu-riscv64 -L /opt/riscv/sysroot/
 # Flag: RUN
 #	Use this flag to supply flags before the image name and parameters
 #

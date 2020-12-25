@@ -69,6 +69,7 @@ RM=rm -f
 CP=cp -f
 CAT=cat
 PERL=perl
+RISCV=qemu-riscv64
 
 #common make targets
 .PHONY: clean distclean all dolog force_rebuild run results copy_mydata force print-%
